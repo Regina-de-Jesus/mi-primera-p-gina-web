@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,21 @@
             background-color: rgb(217, 141, 52);
             color: rgb(156, 21, 21);
             text-align: center;
-            padding: 10px;
+            padding: 2px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 200%;
+            height: 200px;
+            border-radius: 50%;  /* Ajusta el tamaño de la imagen según tus preferencias */
+            width: 200px; /* Puedes cambiar el valor a la anchura que desees */
+            display: inline-block; /* Añade display: block para centrar con margin auto */
+            margin: 20px; /* Centra horizontalmente */
+            margin-bottom: 20px;
         }
 
         main {
@@ -27,14 +41,8 @@
             padding: 20px;
             background-color: #d38585;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 50px;
+            border-radius: 10px;
         }
-
-        main img {
-            max-width: 200%;
-            height: 200px;
-            border-radius: 30%;  /* Ajusta el tamaño de la imagen según tus preferencias */
-            width: 200px; /* Puedes cambiar el valor a la anchura que desees */
 
         h1, h2 {
             color: #3f34db;
@@ -42,8 +50,27 @@
 
         p {
             line-height: 1.6;
+            max-width: 300px;
+            text-align: center;
         }
 
+        p {
+            text-align: center; /* Centra el texto horizontalmente */
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none; /* Quita los puntos de la lista */
+            padding: 0;
+            margin: 0;
+            display: flexbox /* Convierte la lista en un contenedor flexible */
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px; /* Espacio entre los elementos li */
+        }
         /* ... Otros estilos ... */
 
     </style>
@@ -51,19 +78,26 @@
 <body>
 
     <header>
+        <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mi Imagen">
         <h1>Regina</h1>
+        <h2>Biografía</h2>
+            <p>
+            ¡Hola! Soy Regina, un aprendiz con una pasión por aprender a crear páginas web. 
+            Aquí encontrarás información sobre mi trayectoria profesional, proyectos y más.
+            </p>
+            <ul> 
+                <!-- Enlaces a Redes Sociales -->
+                <li><a href="https://www.facebook.com/TuPerfilDeFacebook">Facebook</a></li>
+                <li><a href="https://twitter.com/TuPerfilDeTwitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com/TuPerfilDeInstagram">Instagram</a></li>
+
+                <!-- Añade tus propios enlaces y redes sociales aquí -->
+                <li><a href="https://www.linkedin.com/in/TuPerfilDeLinkedIn">LinkedIn</a></li>
+                <li><a href="https://www.github.com/TuPerfilDeGitHub">Github</a></li>
+            </ul>
     </header>
 
     <main>
-        <section>
-            <h2>Biografía</h2>
-            <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mi Imagen">
-            <p>
-                ¡Hola! Soy Regina, un aprendiz con una pasión por aprender a crear páginas web. 
-                Aquí encontrarás información sobre mi trayectoria profesional, proyectos y más.
-            </p>
-        </section>
-
         <section>
             <h2>Habilidades</h2>
             <ul>
@@ -87,7 +121,6 @@
         </section>
 
         <!-- Agrega más secciones según sea necesario -->
-
     </main>
 </body>
 </html>
